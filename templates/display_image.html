@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Detection Result</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+    <header>
+        <h1 class="title">Object Detection Result</h1>
+    </header>
+
+    <main>
+        <div style="text-align: center;">
+            <img src="{{ url_for('processed_image') }}" alt="Processed Image" width="45%">
+        </div>
+        <div style="text-align: center; margin-top:15px;">
+            <a href="{{ url_for('index') }}" ><button>Return to Home</button></a>
+        </div>
+    </main>
+</body>
+</html>

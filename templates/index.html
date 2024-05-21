@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Detection Flask App</title>
+    <link rel="stylesheet" href="../static/styles.css">
+    <script>
+        function toggleFileInput() {
+            const packageRadio = document.getElementById('package');
+            const fileInputDiv = document.getElementById('fileInputDiv');
+            fileInputDiv.style.display = packageRadio.checked ? 'block' : 'none';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1 class="title">Object Detection</h1>
+    </header>
+
+    <main>
+        <form action="/" method="post" enctype="multipart/form-data">
+                <legend>Select an Option</legend>
+
+                <div>
+                    <input type="radio" name="options" id="package" value="Upload" onclick="toggleFileInput()">
+                    <label for="package">Upload</label>
+                </div>
+                <div id="fileInputDiv" style="display:none;">
+                    <label for="file">Choose an image to upload:</label>
+                    <input type="file" id="file" name="file" accept="image/*">
+                </div>
+                <div>
+                    <input type="radio" name="options" id="barcode" value="Realtime" onclick="toggleFileInput()">
+                    <label for="barcode">Realtime</label>
+                </div>
+
+            <div class="button" style="margin-left: 20px;">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
