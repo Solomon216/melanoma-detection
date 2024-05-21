@@ -1,5 +1,4 @@
 import cv2
-from pyzbar.pyzbar import decode
 from ultralytics import YOLO
 import time
 model = YOLO("./best.pt")
