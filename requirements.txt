@@ -1,5 +1,5 @@
-pip install ultralytics==8.2.18
-pip install opencv-python==4.9.0.80
-pip install imutils==0.5.4
-pip install os-sys==2.1.4
-pip install werkzeug==3.0.3
+ultralytics==8.2.18
+opencv-python==4.9.0.80
+imutils==0.5.4
+os-sys==2.1.4
+werkzeug==3.0.3
