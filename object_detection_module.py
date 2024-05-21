@@ -1,6 +1,5 @@
 import cv2
 from ultralytics import YOLO
-import time
 model = YOLO("./best.pt")
 def realtime(frame):
     result = model(frame)
