@@ -1,5 +1,6 @@
-pip install ultralytics 
-pip install opencv-python
-pip install imutils
-pip install os
-pip install werkzeug
+ultralytics==8.2.18
+opencv-python==4.9.0.80
+imutils==0.5.4
+werkzeug==3.0.3
+gunicorn==19.7.1
+flask==3.0.3
